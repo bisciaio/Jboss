@@ -1,0 +1,23 @@
+- name: Download jboss
+  get_url:
+    url: http://download.jboss.org/jbossas/7.1/jboss-as-7.1.1.Final/jboss-as-7.1.1.Final.zip
+    dest: /opt
+
+- name: unzip jboss
+  unarchive:
+    src: /opt/jboss-as-7.1.1.Final.zip
+    dest: /opt
+    remote_src: yes
+
+- name: utente jboss
+  user:
+    name: jboss
+    shell: /bin/bash
+    system: yes
+
+- name: permessi cartella jboss
+  file:
+    path: /opt/jboss
+    owner: jboss
+    group: jboss
+    recurse: yes
