@@ -17,7 +17,7 @@
 
 - name: permessi cartella jboss
   file:
-    path: /opt/jboss
+    path: /opt/jboss-as-7.1.1.Final.zip
     owner: jboss
     group: jboss
     recurse: yes
