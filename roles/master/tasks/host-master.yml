@@ -1,7 +1,7 @@
 - name: Configurazione host-master.xml
   template:
     src: host-master.file
-    dest: /opt/jboss-eap-7.1.Final/domain/configuration/host-master.xml
+    dest: /opt/jboss-eap-7.1.1.Final/domain/configuration/host-master.xml
     owner: jboss
     group: jboss
 
@@ -9,6 +9,6 @@
 - name: Configurazione host.xml
   template:
     src: host.file
-    dest: /opt/jboss-eap-7.1.Final/domain/configuration/host.xml
+    dest: /opt/jboss-eap-7.1.1.Final/domain/configuration/host.xml
     owner: jboss
     group: jboss
